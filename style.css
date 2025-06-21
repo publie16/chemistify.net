@@ -1,0 +1,533 @@
+body{
+    margin:40px;
+    background-color: #132a17;
+    color:bisque;
+}
+.container-home{
+    display:flex;
+    flex-direction: column;
+}
+.container-main{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+.title{
+    color:goldenrod;
+    align-self: end;
+}
+
+.info{
+    font-family: "Poppins", sans-serif;
+    font-size: 39px;
+    color: rgb(225, 223, 209);
+}
+.fingertips{
+    font-size: 110px;
+}
+.container-navigation{
+    display:flex;
+    justify-content: center;
+    gap: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    background-color: rgb(14, 30, 17);
+    padding: 10px;
+    border-radius: 20px;
+}
+.container-navigation>a{
+    text-decoration: none;
+    color: rgb(225, 223, 209);
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+.container-navigation>a:hover{
+    opacity: 50%;
+}
+
+.break{
+    opacity: 40%;
+    width: 100%;
+}
+.element{
+    color: rgb(221, 198, 170);
+    background-color: rgb(32, 52, 35);
+    border-radius: 5px;
+    box-shadow: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.element>p{
+    text-align: center;
+}
+.Periodic-table{
+    position: relative;
+    left:50px;
+    top:50px;
+    display: grid;
+    grid-template-columns: repeat(18,50px) 320px;
+    grid-template-rows: repeat(7,50px);
+    gap:10px;
+}
+.element:hover{
+    background-color: rgb(31, 69, 37);
+    transform: scale(1.25);
+    box-shadow: inset 0 0 10px rgba(0, 255, 128, 0.4);
+}
+.element-info{
+    grid-column: 19;      /* The last (rightmost) column */
+    grid-row: 1 / -1; 
+    /*background-color: aqua;*/
+}
+.heavymetals{
+    position: relative;
+    left:140px;
+    top:50px;
+    display:grid;
+    grid-template-columns: repeat(15,50px) 320px;
+    grid-template-rows: repeat(2,50px);
+    gap:10px;
+}
+
+.element-info > div {
+  display: none;
+  background-color: rgb(32, 52, 35);
+  padding: 20px;
+  color:bisque;
+  border-radius: 15px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+.h-element-info{
+    grid-column: 16;      /* The last (rightmost) column */
+    grid-row: 1 / -1; 
+    /*background-color: aqua;*/
+}
+.h-element-info > div {
+  display: none;
+  position: relative;
+  padding: 20px;
+  top:-20px;
+  left:105px;
+  background-color: rgb(32, 52, 35);
+  color: bisque;
+  border-radius: 15px;
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+}
+footer{
+  opacity:0.5;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+#H:hover ~ .element-info #H-info {
+  display: block;
+}
+#He:hover ~ .element-info #He-info {
+  display:block;
+}
+#Li:hover ~ .element-info #Li-info {
+  display: block;
+}
+#Be:hover ~ .element-info #Be-info {
+  display: block;
+}
+#B:hover ~ .element-info #B-info {
+  display: block;
+}
+#C:hover ~ .element-info #C-info {
+  display: block;
+}
+#N:hover ~ .element-info #N-info {
+  display: block;
+}
+#O:hover ~ .element-info #O-info {
+  display: block;
+}
+#F:hover ~ .element-info #F-info {
+  display: block;
+}
+#Ne:hover ~ .element-info #Ne-info {
+  display: block;
+}
+#Na:hover ~ .element-info #Na-info {
+  display: block;
+}
+#Mg:hover ~ .element-info #Mg-info {
+  display: block;
+}
+#Al:hover ~ .element-info #Al-info {
+  display: block;
+}
+#Si:hover ~ .element-info #Si-info {
+  display: block;
+}
+#P:hover ~ .element-info #P-info {
+  display: block;
+}
+#S:hover ~ .element-info #S-info {
+  display: block;
+}
+#Cl:hover ~ .element-info #Cl-info {
+  display: block;
+}
+#Ar:hover ~ .element-info #Ar-info {
+  display: block;
+}
+#K:hover ~ .element-info #K-info {
+  display: block;
+}
+#Ca:hover ~ .element-info #Ca-info {
+  display: block;
+}
+#Sc:hover ~ .element-info #Sc-info {
+  display: block;
+}
+#Ti:hover ~ .element-info #Ti-info {
+  display: block;
+}
+#V:hover ~ .element-info #V-info {
+  display: block;
+}
+#Cr:hover ~ .element-info #Cr-info {
+  display: block;
+}
+#Mn:hover ~ .element-info #Mn-info {
+  display: block;
+}
+#Fe:hover ~ .element-info #Fe-info {
+  display: block;
+}
+#Co:hover ~ .element-info #Co-info {
+  display: block;
+}
+#Ni:hover ~ .element-info #Ni-info {
+  display: block;
+}
+#Cu:hover ~ .element-info #Cu-info {
+  display: block;
+}
+#Zn:hover ~ .element-info #Zn-info {
+  display: block;
+}
+#Ga:hover ~ .element-info #Ga-info {
+  display: block;
+}
+#Ge:hover ~ .element-info #Ge-info {
+  display: block;
+}
+#As:hover ~ .element-info #As-info {
+  display: block;
+}
+#Se:hover ~ .element-info #Se-info {
+  display: block;
+}
+#Br:hover ~ .element-info #Br-info {
+  display: block;
+}
+#Kr:hover ~ .element-info #Kr-info {
+  display: block;
+}
+#Rb:hover ~ .element-info #Rb-info {
+  display: block;
+}
+#Sr:hover ~ .element-info #Sr-info {
+  display: block;
+}
+#Y:hover ~ .element-info #Y-info {
+  display: block;
+}
+#Zr:hover ~ .element-info #Zr-info {
+  display: block;
+}
+#Nb:hover ~ .element-info #Nb-info {
+  display: block;
+}
+#Mo:hover ~ .element-info #Mo-info {
+  display: block;
+}
+#Tc:hover ~ .element-info #Tc-info {
+  display: block;
+}
+#Ru:hover ~ .element-info #Ru-info {
+  display: block;
+}
+#Rh:hover ~ .element-info #Rh-info {
+  display: block;
+}
+#Pd:hover ~ .element-info #Pd-info {
+  display: block;
+}
+#Ag:hover ~ .element-info #Ag-info {
+  display: block;
+}
+#Cd:hover ~ .element-info #Cd-info {
+  display: block;
+}
+#In:hover ~ .element-info #In-info {
+  display: block;
+}
+#Sn:hover ~ .element-info #Sn-info {
+  display: block;
+}
+#Sb:hover ~ .element-info #Sb-info {
+  display: block;
+}
+#Te:hover ~ .element-info #Te-info {
+  display: block;
+}
+#I:hover ~ .element-info #I-info {
+  display: block;
+}
+#Xe:hover ~ .element-info #Xe-info {
+  display: block;
+}
+#Cs:hover ~ .element-info #Cs-info {
+  display: block;
+}
+#Ba:hover ~ .element-info #Ba-info {
+  display: block;
+}
+/* Skipping La–Lu */
+#Hf:hover ~ .element-info #Hf-info {
+  display: block;
+}
+#Ta:hover ~ .element-info #Ta-info {
+  display: block;
+}
+#W:hover ~ .element-info #W-info {
+  display: block;
+}
+#Re:hover ~ .element-info #Re-info {
+  display: block;
+}
+#Os:hover ~ .element-info #Os-info {
+  display: block;
+}
+#Ir:hover ~ .element-info #Ir-info {
+  display: block;
+}
+#Pt:hover ~ .element-info #Pt-info {
+  display: block;
+}
+#Au:hover ~ .element-info #Au-info {
+  display: block;
+}
+#Hg:hover ~ .element-info #Hg-info {
+  display: block;
+}
+#Tl:hover ~ .element-info #Tl-info {
+  display: block;
+}
+#Pb:hover ~ .element-info #Pb-info {
+  display: block;
+}
+#Bi:hover ~ .element-info #Bi-info {
+  display: block;
+}
+#Po:hover ~ .element-info #Po-info {
+  display: block;
+}
+#At:hover ~ .element-info #At-info {
+  display: block;
+}
+#Rn:hover ~ .element-info #Rn-info {
+  display: block;
+}
+#Fr:hover ~ .element-info #Fr-info {
+  display: block;
+}
+#Ra:hover ~ .element-info #Ra-info {
+  display: block;
+}
+/* Skipping Ac–Lr */
+#Rf:hover ~ .element-info #Rf-info {
+  display: block;
+}
+#Db:hover ~ .element-info #Db-info {
+  display: block;
+}
+#Sg:hover ~ .element-info #Sg-info {
+  display: block;
+}
+#Bh:hover ~ .element-info #Bh-info {
+  display: block;
+}
+#Hs:hover ~ .element-info #Hs-info {
+  display: block;
+}
+#Mt:hover ~ .element-info #Mt-info {
+  display: block;
+}
+#Ds:hover ~ .element-info #Ds-info {
+  display: block;
+}
+#Rg:hover ~ .element-info #Rg-info {
+  display: block;
+}
+#Cn:hover ~ .element-info #Cn-info {
+  display: block;
+}
+#Nh:hover ~ .element-info #Nh-info {
+  display: block;
+}
+#Fl:hover ~ .element-info #Fl-info {
+  display: block;
+}
+#Mc:hover ~ .element-info #Mc-info {
+  display: block;
+}
+#Lv:hover ~ .element-info #Lv-info {
+  display: block;
+}
+#Ts:hover ~ .element-info #Ts-info {
+  display: block;
+}
+#Og:hover ~ .element-info #Og-info {
+  display: block;
+}
+
+#La:hover~.h-element-info #La-info{
+    display:block;
+}
+
+#Ce:hover ~ .h-element-info #Ce-info {
+  display: block;
+}
+#Pr:hover ~ .h-element-info #Pr-info {
+  display: block;
+}
+#Nd:hover ~ .h-element-info #Nd-info {
+  display: block;
+}
+#Pm:hover ~ .h-element-info #Pm-info {
+  display: block;
+}
+#Sm:hover ~ .h-element-info #Sm-info {
+  display: block;
+}
+#Eu:hover ~ .h-element-info #Eu-info {
+  display: block;
+}
+#Gd:hover ~ .h-element-info #Gd-info {
+  display: block;
+}
+#Tb:hover ~ .h-element-info #Tb-info {
+  display: block;
+}
+#Dy:hover ~ .h-element-info #Dy-info {
+  display: block;
+}
+#Ho:hover ~ .h-element-info #Ho-info {
+  display: block;
+}
+#Er:hover ~ .h-element-info #Er-info {
+  display: block;
+}
+#Tm:hover ~ .h-element-info #Tm-info {
+  display: block;
+}
+#Yb:hover ~ .h-element-info #Yb-info {
+  display: block;
+}
+#Lu:hover ~ .h-element-info #Lu-info {
+  display: block;
+}
+
+#Ac:hover ~ .h-element-info #Ac-info {
+  display: block;
+}
+#Th:hover ~ .h-element-info #Th-info {
+  display: block;
+}
+#Pa:hover ~ .h-element-info #Pa-info {
+  display: block;
+}
+#U:hover ~ .h-element-info #U-info {
+  display: block;
+}
+#Np:hover ~ .h-element-info #Np-info {
+  display: block;
+}
+#Pu:hover ~ .h-element-info #Pu-info {
+  display: block;
+}
+#Am:hover ~ .h-element-info #Am-info {
+  display: block;
+}
+#Cm:hover ~ .h-element-info #Cm-info {
+  display: block;
+}
+#Bk:hover ~ .h-element-info #Bk-info {
+  display: block;
+}
+#Cf:hover ~ .h-element-info #Cf-info {
+  display: block;
+}
+#Es:hover ~ .h-element-info #Es-info {
+  display: block;
+}
+#Fm:hover ~ .h-element-info #Fm-info {
+  display: block;
+}
+#Md:hover ~ .h-element-info #Md-info {
+  display: block;
+}
+#No:hover ~ .h-element-info #No-info {
+  display: block;
+}
+#Lr:hover ~ .h-element-info #Lr-info {
+  display: block;
+}
+
+
+
+@media(max-width:900px){
+    body{
+        margin:20px;
+    }
+    .container-home{
+        display: flex;
+        flex-direction: row;
+        gap:2rem;
+    }
+    .title{
+    color:goldenrod;
+    align-self: center;
+    font-size: 10px;
+}
+
+.info{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: rgb(225, 223, 209);
+}
+.fingertips{
+    font-size: 65px;
+}
+.container-navigation{
+    flex-direction: column;
+
+}
+.container-navigation>a{
+    font-size: 13px;
+}
+
+.break{
+    opacity: 0;
+    width: 100%;
+}
+.Periodic-table{
+    position: relative;
+    left:100px;
+    display: grid;
+    grid-template-columns: repeat(18,20px);
+    grid-template-rows: repeat(7,20px);
+    gap:3px;
+}
+.Periodic-table>.element{
+     opacity: 0;
+}
+}
