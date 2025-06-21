@@ -1,0 +1,243 @@
+.container-metals{
+    display:grid;
+    padding-right: 50px;
+    padding-top: 50px;
+    grid-template-columns: 350px 900px;
+    gap:2rem;
+}
+
+.left-pane{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    gap:1rem;
+}
+
+.right-pane{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+    
+
+.researchinfo{
+    max-height: 300px;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.189);
+    border-radius: 20px;
+}
+.summary{
+    max-height: 500px;
+    min-width: 1050px;
+    overflow-y: scroll;
+    background: #bade5f;
+    background: linear-gradient(90deg, rgba(186, 222, 95, 0) 0%, rgba(131, 235, 176, 0.28) 94%, rgba(186, 222, 95, 0.28) 100%);
+    border-radius: 20px;
+    padding: 20px;
+}
+.summary-item{
+    display: grid;
+    grid-template-columns: 700px 350px;
+}
+.reallifeuse{
+    background: #bade5f;
+    background: linear-gradient(90deg, rgba(186, 222, 95, 0) 0%, rgba(131, 235, 176, 0.28) 94%, rgba(186, 222, 95, 0.28) 100%);
+    border-radius: 20px;
+    padding: 20px;
+    color: bisque;
+    max-height: 500px;
+    min-width: 1050px;
+    overflow-y: scroll;
+}
+.main{
+    border-radius: 15px;
+    background: #bade5f;
+background: linear-gradient(90deg, rgba(186, 222, 95, 0.30) 0%, rgba(131, 235, 176, 0.30) 50%, rgba(186, 222, 95, 0.30) 100%);
+}
+h1{
+    color: beige;
+    font-size: 40px;
+    padding: 20px;
+}
+li{
+    font-size: 17px;
+    line-height: 1.8;
+}
+img{
+    margin-top: 60px;
+    border-radius: 15px;
+}
+/* Scrollbar track */
+::-webkit-scrollbar {
+  width: 10px; /* or height for horizontal */
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #1c411e; /* green */
+  border-radius: 6px;
+}
+
+/* Scrollbar track background */
+::-webkit-scrollbar-track {
+  background-color: #0c1b0f;
+}
+p{
+    line-height: 1.5;
+}
+.heading {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  width: 100%; /* Optional: full width */
+  background-color: rgb(19, 34, 23);
+  border-radius: 15px;
+  color: white; /* if needed for contrast */
+  padding: 10px 0; /* Optional for spacing */
+  z-index: 1000; /* Keeps it on top */
+}
+
+@media(max-width:900px){
+    .container-metals{
+    display:grid;
+    padding-right: 25px;
+    grid-template-rows: 1fr 1fr;
+    gap:1.5rem;
+}
+
+.left-pane{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    gap:1rem;
+}
+
+.right-pane{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+    
+
+.researchinfo{
+    max-height: 150px;
+    overflow-y: scroll;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.189);
+    border-radius: 5px;
+}
+.summary{
+    max-height: 250px;
+    min-width: 450px;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.189);
+    border-radius: 5px;
+    padding: 5px;
+}
+.summary-item{
+    display: grid;
+    grid-template-columns: 450px 250px;
+}
+.reallifeuse{
+    background-color: rgba(0, 0, 0, 0.189);
+    border-radius: 5px;
+    padding: 5px;
+    color: bisque;
+    max-height: 250px;
+    min-width: 650px;
+    overflow-y: scroll;
+}
+}
+/* CSS File */
+.student-insight {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  background-color:rgba(0, 0, 0, 0.189);
+  line-height: 1.8;
+}
+
+.insight-box {
+  background-color: #1f4325;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease-in-out;
+}
+
+.insight-box:hover {
+  transform: scale(1.01);
+}
+
+.insight-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #d8e0dc;
+  border-left: 5px solid #4caf50;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.metals {
+  border-left-color: #6a9cfc;
+}
+
+.nonmetals {
+  border-left-color: #ef798a;
+}
+
+.metalloids {
+  border-left-color: #c08bdf;
+}
+
+.insight-box p {
+  font-size: 1.05rem;
+  color: #f6f3f3;
+  text-align: justify;
+}
+
+.insight-box i {
+  color: #ffffff;
+}
+
+.insight-box b {
+  color: #c1ebd4;
+}
+.insight-section {
+  background-color: rgba(118, 60, 60, 0.189);
+  padding: 2rem;
+  border-radius: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1rem auto;
+  max-width: 900px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.insight-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #e8ece8;
+}
+
+.insight-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #fdfbfb;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.mini-heading {
+  font-size: 1.5rem;
+  color: #b1e6c9;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.quote {
+  background-color:rgba(0, 0, 0, 0.189);
+  border-left: 5px solid #4caf50;
+  padding: 1rem;
+  font-style: italic;
+  color: #444;
+  border-radius: 8px;
+}
